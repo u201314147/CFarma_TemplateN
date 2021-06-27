@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-#nullable disable
+//#nullable disable
 
 namespace CFarma_TemplateN.Models
 {
@@ -29,7 +29,7 @@ namespace CFarma_TemplateN.Models
 
         [Column("precio")]
         [Display(Name = "Precio")]
-        public double Precio { get; set; }
+        public Decimal Precio { get; set; }
 
         
         [Column("stock")]

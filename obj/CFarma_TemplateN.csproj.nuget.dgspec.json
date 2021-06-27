@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\CFarma_TemplateN\\CFarma_TemplateN.csproj": {}
+    "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\f\\CFarma_TemplateN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\CFarma_TemplateN\\CFarma_TemplateN.csproj": {
+    "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\f\\CFarma_TemplateN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\CFarma_TemplateN\\CFarma_TemplateN.csproj",
+        "projectUniqueName": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\f\\CFarma_TemplateN.csproj",
         "projectName": "CFarma_TemplateN",
-        "projectPath": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\CFarma_TemplateN\\CFarma_TemplateN.csproj",
+        "projectPath": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\f\\CFarma_TemplateN.csproj",
         "packagesPath": "C:\\Users\\X10538\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\CFarma_TemplateN\\obj\\",
+        "outputPath": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\f\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

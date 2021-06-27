@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UH10MEQECYXA5zWY7LDcCToKeT517jCYu9a6Bc9FjIC5cSXEuNSMEz/KU5ULR5Nl8nWUPJ6Yvg4e/w4GR4mSjQ==",
+  "dgSpecHash": "KmR2gEooLTPdsPAkY/i+3EeufGTQ6MaPK8GQE8JwB+jkEwYybNlgAkMAZyiPvNK2m0NZp5FNVIXRjHbEGE454A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\CFarma_TemplateN\\CFarma_TemplateN.csproj",
+  "projectFilePath": "C:\\Users\\X10538\\Downloads\\Material-ProyectoCFarma\\Material-ProyectoCFarma\\f\\CFarma_TemplateN.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\X10538\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\X10538\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.6\\microsoft.aspnetcore.cryptography.internal.5.0.6.nupkg.sha512",
