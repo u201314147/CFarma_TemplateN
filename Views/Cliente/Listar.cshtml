@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CFarma_TemplateN.Models.Cliente>
+@{
+    ViewData["Title"] = "Listar Contactos";
+}
+
+<h1>Listar Contacto</h1>
+<p><a asp-action="Index2">Añadir contacto</a></p>
+
+<div class="container col-md-4">
+    <table class="table table-danger">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                @*con esta wea se llama al nombre del display que declaramo en la clase Cliente*@
+                <th scope="col">@Html.DisplayNameFor(model => model.Nom)</th>
+                <th scope="col">Apellidos</th>
+                <th scope="col">Teléfono</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th scope="row">@Html.DisplayFor(modelItem => item.codc)</th>
+                <td>@Html.DisplayFor(modelItem => item.Nom)</td>
+                <td>@Html.DisplayFor(modelItem => item.Apellido)</td>
+                <td>@Html.DisplayFor(modelItem => item.Movil)</td>
+                <th scope="row">
+                <a asp-action="Editar" asp-route-id="@item.codc">Editar</a>
+                <a asp-action="Eliminar" asp-route-id="@item.codc">Eliminar</a>
+                </th>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,509 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - C'Farma</title>
+    <!-- Links otros -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    @*Font Awesome*@
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          rel="stylesheet" />
+    @*Google Fonts*@
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          rel="stylesheet" />
+    @*MDB*@
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+          rel="stylesheet" />
+
+
+
+
+    @*<link rel="shortcut icon" href="img/favicon.ico">*@
+    <link rel="shortcut icon" href="~/img/favicon.ico" />
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,900,700,700italic,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700%7CDancing+Script%7CMontserrat:400,700%7CMerriweather:400,300italic%7CLato:400,700,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Cantata+One' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+
+    <!-- Magnific Popup -->
+    <link href="~/css/magnific-popup.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/skin-lblue.css">
+
+    <link rel="stylesheet" href="~/css/ecommerce.css">
+
+    <!-- Owl carousel -->
+    <link href="~/css/owl.carousel.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/css/revolutionslider_settings.css" media="screen" />
+
+    <script src="~/js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <!-- Top bar starts -->
+        <div class="top-bar">
+            <div class="container">
+
+                <!-- Contact starts -->
+                <div class="tb-contact pull-left">
+                    <!-- Email -->
+                    <i class="fa fa-envelope color"></i> &nbsp; <a href="cfarma@gamil.com"> <font color='black'>cfarma@gmail.com </font></a>
+                    &nbsp;&nbsp;
+                    <!-- Phone -->
+                    <i class="fa fa-phone color"></i> &nbsp;<font color='black'> 981 514 158 - 991 590 551 </font>
+                </div>
+                <!-- Contact ends -->
+                <!-- Shopping kart starts -->
+                <div class="tb-shopping-cart pull-right">
+                    <!-- Link with badge -->
+                    <a href="#" class="btn btn-white btn-xs b-dropdown"><i class="fa fa-shopping-cart"></i> <i class="fa fa-angle-down color"></i> <span class="badge badge-color">2</span></a>
+                    <!-- Dropdown content with item details -->
+                    <div class="b-dropdown-block">
+                        <!-- Heading -->
+                        <h4><i class="fa fa-shopping-cart color"></i> Your Items</h4>
+                        <ul class="list-unstyled">
+                            <!-- Item 1 -->
+                            <li>
+                                <!-- Item image -->
+                                <div class="cart-img">
+                                    <a href="#"><img src="img/ecommerce/view-cart/1.png" alt="" class="img-responsive" /></a>
+                                </div>
+                                <!-- Item heading and price -->
+                                <div class="cart-title">
+                                    <h5><a href="#">Premium Quality Shirt</a></h5>
+                                    <!-- Item price -->
+                                    <span class="label label-color label-sm">$1,90</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                            <!-- Item 2 -->
+                            <li>
+                                <div class="cart-img">
+                                    <a href="#"><img src="img/ecommerce/view-cart/2.png" alt="" class="img-responsive" /></a>
+                                </div>
+                                <div class="cart-title">
+                                    <h5><a href="#">Premium Quality Shirt</a></h5>
+                                    <span class="label label-color label-sm">$1,20</span>
+                                </div>
+                                <div class="clearfix"></div>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-white btn-sm">View Cart</a> &nbsp; <a href="#" class="btn btn-color btn-sm">Checkout</a>
+                    </div>
+                </div>
+                <!-- Shopping kart ends -->
+                <!-- Search section for responsive design -->
+                <div class="tb-search pull-left">
+                    <a href="#" class="b-dropdown"><i class="fa fa-search square-2 rounded-1 bg-color white"></i></a>
+                    <div class="b-dropdown-block">
+                        <form>
+                            <!-- Input Group -->
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Type Something">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-color" type="button">Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Search section ends -->
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <!-- Top bar ends -->
+        <!-- Header One Starts -->
+        <div class="header-1">
+
+            <!-- Container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <!-- Logo section -->
+                        <div class="logo">
+                            <h1 class="fw-bold "><a asp-area="" asp-controller="Home" asp-action="Index"><img src='~/img/cfarma.png' width=50 height=50> C'Farma</a></h1>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-2 col-sm-5 col-sm-offset-3 hidden-xs">
+                        <!-- Search Form -->
+                        <div class="header-search">
+                            <form>
+                                <!-- Input Group -->
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Escribe nombre del producto ...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-color" type="button">Buscar</button>
+                                    </span>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation starts -->
+
+            <div class="navi">
+                <div class="container">
+                    <div class="navy">
+
+                        <ul>
+                            <!-- Main menu -->
+                            <li>
+                                <a href="#" class="fs-6">Nutrición</a>
+                                <!-- Submenu -->
+                                <ul>
+                                    <li>
+                                        <a href="#">Minerales</a>
+                                        <ul>
+                                            <li><a asp-controller="Nutricion" asp-action="Hierro">Hierro</a></li>
+                                            <li><a asp-controller="Nutricion" asp-action="Magnesio">Magnesio</a></li>
+                                            <li><a asp-controller="Nutricion" asp-action="Zinc">Zinc</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Multivitamínicos</a>
+                                        <ul>
+                                            <li><a href="footer-one.html">Adu1to Mayor</a></li>
+                                            <li><a href="footer-two.html">Para Adultos</a></li>
+                                            <li><a href="footer-three.html">Para Niños</a></li>
+                                            <li><a href="footer-three.html">Prenatal</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vitaminas</a>
+                                        <ul>
+                                            <li><a href="footer-one.html">Vitamina A</a></li>
+                                            <li><a href="footer-two.html">Vitamina B</a></li>
+                                            <li><a href="footer-three.html">Vitamina C</a></li>
+                                            <li><a href="footer-three.html">Vitamina D</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="fs-6">Infantil</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Aseo</a>
+                                        <ul>
+                                            <li><a href="footer-one.html">Crema dental infantil</a></li>
+                                            <li><a href="footer-two.html">Crema humectantes2</a></li>
+                                            <li><a href="footer-three.html">Jabon para niños</a></li>
+                                            <li><a href="footer-three.html">Shampoo para niños</a></li>
+                                            <li><a href="footer-three.html">Talcos</a></li>
+                                            <li><a href="footer-three.html">Toallitas</a></li>
+                                            <li><a href="footer-three.html">Tratamiento escaldadura</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Pañales para bebé</a>
+                                        <ul>
+                                            <li><a href="footer-one.html">Recién nacidos</a></li>
+                                            <li><a href="footer-two.html">Talla G-L</a></li>
+                                            <li><a href="footer-three.html">Talla M</a></li>
+                                            <li><a href="footer-three.html">Talla XG-XL</a></li>
+                                            <li><a href="footer-three.html">Talla XXG-XXL</a></li>
+                                            <li><a href="footer-three.html">Tallas S/P</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">Vitaminas y suplementos</a>
+                                        <ul>
+                                            <li><a href="footer-one.html">Ácido fólico</a></li>
+                                            <li><a href="footer-two.html">Biotina</a></li>
+                                            <li><a href="footer-three.html">Calcio</a></li>
+                                            <li><a href="footer-three.html">Hierro</a></li>
+                                            <li><a href="footer-three.html">Multivitamínico para bebes</a></li>
+                                            <li><a href="footer-three.html">Multivitamínico prenatal</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="fs-6">Cuidado Personal</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Baño</a>
+                                        <ul>
+                                            <li><a href="#">Acondicionador</a></li>
+                                            <li><a href="#">Jabones</a></li>
+                                            <li><a href="#">Shampoo</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cuidado bucal</a>
+                                        <ul>
+                                            <li><a href="#">Cepillos</a></li>
+                                            <li><a href="#">Crema dental</a></li>
+                                            <li><a href="#">Enjuagues</a></li>
+                                            <li><a href="#">Hilo dental</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cuidado íntimo</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Cuidado piel</a>
+                                        <ul>
+                                            <li><a href="#">Bloqueador solar</a></li>
+                                            <li><a href="#">Repelentes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Desodorantes</a>
+                                        <ul>
+                                            <li><a href="#">Hombre</a></li>
+                                            <li><a href="#">Mujer</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Preservativos</a>
+
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="fs-6">Salud</a>
+                                <ul>
+                                    <li>
+                                        <a href="#">Problemas dérmicos</a>
+                                        <ul>
+                                            <li><a href="#">Antibióticos</a></li>
+                                            <li><a href="#">Antimicóticos</a></li>
+                                            <li><a href="#">Cicatrizantes</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Problemas digestivos</a>
+                                        <ul>
+                                            <li><a href="#">Antiácidos</a></li>
+                                            <li><a href="#">Antibióticos</a></li>
+                                            <li><a href="#">Antiflatulentos</a></li>
+                                            <li><a href="#">Antihemorroidales</a></li>
+                                            <li><a href="#">Antiparasitario</a></li>
+                                            <li><a href="#">Digestivo</a></li>
+                                            <li><a href="#">Laxantes</a></li>
+                                            <li><a href="#">Reposición de electrolitos</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Problemas hormonales</a>
+                                        <ul>
+                                            <li><a href="#">Anticonceptivos</a></li>
+                                            <li><a href="#">Insulinas</a></li>
+                                            <li><a href="#">Tiroides</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Problemas respiratorios</a>
+                                        <ul>
+                                            <li><a href="#">Antigripales</a></li>
+                                            <li><a href="#">Dolor de garganta</a></li>
+                                            <li><a href="#">Tos y frío</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Problemas sanguíneos</a>
+                                        <ul>
+                                            <li><a href="#">Antianémicos</a></li>
+                                            <li><a href="#">Anticoagulantes</a></li>
+                                            <li><a href="#">Antihemorrágicos</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation ends -->
+
+        </div>
+
+        <!-- Header one ends -->
+
+    </header>
+    @*<div class="col-lg-6 d-flex ">*@
+
+        <p class="text-end">
+            <a a class="fw-bold text-dark" asp-area="" asp-controller="Home" asp-action="Logueo">
+                <img src="~/img/loginn.png" width=31 height=31 /> Iniciar sesión
+            </a>
+            &nbsp &nbsp
+            <a class="fw-bold text-dark" asp-area="" asp-controller="Home" asp-action="Registro">
+                <img src="~/img/registrarr.png" width=25 height=25 />Registrar
+            </a>
+        </p>
+
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+
+    <footer class="bg-warning text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <p class="pt-2" "><strong>¡Síguenos en nuestras Redes Sociales!</strong></p>
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>¡Deja tu correo para que te mandemos las últimas novedades!</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example2" class="form-control" />
+                                <label class="form-label" for="form5Example2">Correo Electrónico</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribirme
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+            <!-- Section: Links -->
+            <section class="">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <b><p class="text-uppercase light-text fs-6">Tienda Online</p></b>
+                            <div class="container">
+                                <ul class="list-unstyled mb-0">
+                                    <li>
+                                        <a class="text-white" asp-controller="Footer" asp-action="Legal">Legales</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-white">Términos y Condiciones</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="text-white">Políticas de Privacidad</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                        <!--Grid column-->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <b><p class="text-uppercase light-text fs-6">Contáctanos</p></b>
+
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Nuestras boticas</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Consultas y sugerencias</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Zona de cobertura</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+
+                    <!--Grid row-->
+                </div>
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright C'Farma
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- All script -->
+    <script src="~/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/smoothscroll.js"></script>
+    <!-- Scroll up js
+    ============================================ -->
+    <script src="~/js/jquery.scrollUp.js"></script>
+    <script src="~/js/menu.js"></script>
+    <!-- new collection section script -->
+    <script src="~/js/swiper/idangerous.swiper.min.js"></script>
+    <script src="~/js/swiper/swiper.custom.js"></script>
+
+    <!-- Magnific Popup -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="~/js/jquery.countdown.min.js"></script>
+
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script type="text/javascript" src="~/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="~/rs-plugin/js/jquery.themepunch.crevolution.min.js"></script>
+    <!-- Owl carousel -->
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/main.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
