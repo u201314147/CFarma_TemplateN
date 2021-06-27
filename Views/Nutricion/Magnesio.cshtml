@@ -19,4 +19,38 @@
         Nutrición>Minerales> <b>Magnesio</b>
         <img src="~/img/vitaminass.jpg" width="50" height="50" />
     </h3>
+    @foreach (var item in ViewData["listaTipo"] as List<Producto>)
+    {
+
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nom)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Precio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Stock)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Agregar", "Agregar", new { id = item.idpt }) |
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    }
 </div>

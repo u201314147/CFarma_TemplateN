@@ -26,24 +26,52 @@
         <img src="~/img/vitaminass.jpg" width="50" height="50" />
 
     </h3>
-
     @foreach (var item in ViewData["listaTipo"] as List<Producto>)
     {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nom)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Precio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Stock)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.idpt }) |
-                @Html.ActionLink("Details", "Details", new { id = item.idpt }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.idpt })
-            </td>
-        </tr>
+
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nom)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Precio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Stock)
+                    </td>
+                    <td>
+
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    </td>
+                    <td>
+
+                        @Ajax.ActionLink("Agregar", "Agregar", new { id_cliente = "", id_producto = item.idpt, cantidad = 1, identificador = "" }, new AjaxOptions { HttpMethod = "Post" }) |
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    }
+    @using System.Web.Optimization
+    @Scripts.Render("~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js")
+    @section scripts{
+        <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     }
 </div>

@@ -12,7 +12,7 @@ namespace CFarma_TemplateN.Data
             : base(options)
         {
         }
-
+        public DbSet<CFarma_TemplateN.Models.Carrito> Carritos { get; set; }
         public DbSet<CFarma_TemplateN.Models.Cliente> Clientes { get; set; }
         public DbSet<CFarma_TemplateN.Models.Producto> Productos { get; set; }
     }

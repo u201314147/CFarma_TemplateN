@@ -7,7 +7,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
 namespace CFarma_TemplateN.Controllers
 {
     public class NutricionController : Controller
@@ -31,17 +30,57 @@ namespace CFarma_TemplateN.Controllers
 
             var listaTipo = listarProductos.Where(x => x.CodSubc == 4001).ToList();
 
- 
-            ViewBag.Add(listarProductos);
+
+            ViewData["listaTipo"] = listaTipo;
             return View(listarProductos);
         }
         public IActionResult Magnesio()
         {
-            return View();
+            var listarProductos = _context.Productos.ToList();
+
+            var listaTipo = listarProductos.Where(x => x.CodSubc == 4002).ToList();
+
+
+            ViewData["listaTipo"] = listaTipo;
+            return View(listarProductos);
         }
         public IActionResult Zinc()
         {
-            return View();
+            var listarProductos = _context.Productos.ToList();
+
+            var listaTipo = listarProductos.Where(x => x.CodSubc == 4003).ToList();
+
+
+            ViewData["listaTipo"] = listaTipo;
+            return View(listarProductos);
+        }
+
+
+        [HttpPost]
+        [Route("/Nutricion/Agregar")]
+        public IActionResult Agregar([FromQuery] string cliente, [FromQuery] string producto, [FromQuery] int cantidad)
+        {
+            Carrito objCarrito = new Carrito();
+
+            objCarrito.id_cliente = cliente;
+            objCarrito.id_producto = producto;
+            objCarrito.cantidad = cantidad;
+           // objCarrito.identificador = identificador;
+            try
+            {
+                //guardar
+                _context.Add(objCarrito);
+                _context.SaveChanges();
+
+            }catch(Exception e)
+            {
+                return Ok("ERROR");
+            }
+            RedirectToAction("Carrito", "Carrito");
+
+           // return Ok(objCarrito);
+            return View("Carrito");
+
         }
     }
 }
