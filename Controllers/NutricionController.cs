@@ -78,8 +78,8 @@ namespace CFarma_TemplateN.Controllers
             }
             RedirectToAction("Carrito", "Carrito");
 
-           // return Ok(objCarrito);
-            return View("Carrito");
+            return Ok(objCarrito);
+            //return View("Carrito");
 
         }
     }

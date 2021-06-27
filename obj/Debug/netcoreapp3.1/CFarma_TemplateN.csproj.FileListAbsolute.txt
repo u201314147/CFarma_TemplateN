@@ -204,3 +204,7 @@ C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\CFarma_TemplateN.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Antlr3.Runtime.dll
+C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\System.Web.Optimization.dll
+C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
+C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\WebGrease.dll

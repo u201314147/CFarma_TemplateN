@@ -58,8 +58,7 @@
                     </td>
                     <td>
 
-                        @Ajax.ActionLink("Agregar", "Agregar", new { id_cliente = "", id_producto = item.idpt, cantidad = 1, identificador = "" }, new AjaxOptions { HttpMethod = "Post" }) |
-
+                       
 
                     </td>
                 </tr>
@@ -69,7 +68,8 @@
 
     }
     @using System.Web.Optimization
-    @Scripts.Render("~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js")
+
+
     @section scripts{
         <script src="~/lib/jquery-ajax-unobtrusive/jquery.unobtrusive-ajax.min.js"></script>
         <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
