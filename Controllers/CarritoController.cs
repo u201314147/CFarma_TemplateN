@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using CFarma_TemplateN.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace CarritoPrueba1.Controllers
+namespace CFarma_TemplateN.Controllers
 {
     public class CarritoController : Controller
     {
@@ -26,7 +26,7 @@ namespace CarritoPrueba1.Controllers
         public IActionResult Listar()
         {
             var usuario = "user";
-            var listarCarrito = _context.Carritos.Where(x => x.id_cliente.Equals(usuario));
+            var listarCarrito = _context.Carritos.Where(x => x.id_cliente.Equals(usuario)).ToList();
 
          
             ViewData["listaCarrito"] = listarCarrito;

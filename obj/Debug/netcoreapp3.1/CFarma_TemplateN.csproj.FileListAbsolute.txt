@@ -198,7 +198,6 @@ C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\CFarma_TemplateN.Views.pdb
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\CFarma_TemplateN.csproj.CopyComplete
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\CFarma_TemplateN.genruntimeconfig.cache
-C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Carrito\Carrito.cshtml.g.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\AspNetCore.Unobtrusive.Ajax.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
@@ -208,3 +207,4 @@ C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\System.Web.Optimization.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\WebGrease.dll
+C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Nutricion\Carrito.cshtml.g.cs

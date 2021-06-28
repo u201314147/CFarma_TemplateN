@@ -56,8 +56,33 @@ namespace CFarma_TemplateN.Controllers
         }
 
 
+
+        [Route("/Nutricion/%2F")]
+        public IActionResult Registrar(int id_producto)
+        {
+            var objProduct = _context.Productos.FirstOrDefault(x=>x.idpt==id_producto);
+            Carrito objCarrito = new Carrito();
+
+            objCarrito.id_cliente = "user";
+            objCarrito.id_producto = objProduct.idpt.ToString();
+            objCarrito.identificador = objProduct.Nom.ToString();
+            objCarrito.cantidad = 1;
+            //si está todo VALIDADO, recién aparece esta wea
+            if (ModelState.IsValid)
+            {
+                //guardar
+                _context.Add(objCarrito);
+                _context.SaveChanges();
+
+                //objCliente.confirmacion = "Gracias, estamos en contacto";
+            }
+
+            // return RedirectToAction("Index", "Home");
+           return View("Carrito");
+        }
+
         [HttpPost]
-        [Route("/Nutricion/Agregar")]
+        [Route("/Nutricion/Agregar2")]
         public IActionResult Agregar([FromQuery] string cliente, [FromQuery] string producto, [FromQuery] int cantidad)
         {
             Carrito objCarrito = new Carrito();
@@ -81,6 +106,17 @@ namespace CFarma_TemplateN.Controllers
             return Ok(objCarrito);
             //return View("Carrito");
 
+        }
+
+        public IActionResult Listar()
+        {
+            var usuario = "user";
+            var listarCarrito = _context.Carritos.Where(x => x.id_cliente.Equals(usuario)).ToList();
+
+
+            ViewData["listaCarrito"] = listarCarrito;
+
+            return View();
         }
     }
 }
