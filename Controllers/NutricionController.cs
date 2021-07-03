@@ -56,8 +56,31 @@ namespace CFarma_TemplateN.Controllers
         }
 
 
+        [Route("/Nutricion/Eliminar")]
+        public IActionResult Eliminar(int id_producto)
+        {
+            var objCarrito = _context.Carritos.FirstOrDefault(x => x.id == id_producto);
+            //si está todo VALIDADO, recién aparece esta wea
+            if (ModelState.IsValid)
+            {
+                //guardar
+                _context.Remove(objCarrito);
+                _context.SaveChanges();
 
-        [Route("/Nutricion/%2F")]
+                //objCliente.confirmacion = "Gracias, estamos en contacto";
+            }
+            var usuario = "user";
+            var listarCarrito = _context.Carritos.Where(x => x.id_cliente.Equals(usuario)).ToList();
+
+
+            ViewData["listaCarrito"] = listarCarrito;
+
+            // return RedirectToAction("Index", "Home");
+            return View("Carrito");
+
+        }
+
+        [Route("/Nutricion/AgregarCarrito")]
         public IActionResult Registrar(int id_producto)
         {
             var objProduct = _context.Productos.FirstOrDefault(x=>x.idpt==id_producto);
@@ -78,7 +101,12 @@ namespace CFarma_TemplateN.Controllers
             }
 
             // return RedirectToAction("Index", "Home");
-           return View("Carrito");
+
+            var usuario = "user";
+            var listarCarrito = _context.Carritos.Where(x => x.id_cliente.Equals(usuario)).ToList();
+
+            ViewData["listaCarrito"] = listarCarrito;
+            return View("Carrito");
         }
 
         [HttpPost]
@@ -108,7 +136,7 @@ namespace CFarma_TemplateN.Controllers
 
         }
 
-        public IActionResult Listar()
+        public IActionResult Carrito()
         {
             var usuario = "user";
             var listarCarrito = _context.Carritos.Where(x => x.id_cliente.Equals(usuario)).ToList();

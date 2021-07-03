@@ -49,8 +49,9 @@
                     </td>
                    
                     <td>
-                        @Html.ActionLink("Agregar", "Agregar", new { id = item.id })
-                        @Html.ActionLink("Eliminar", "Eliminar", new { id = item.id })
+                       
+                        @Html.ActionLink("Eliminar", "Eliminar", new { id_producto = item.id }) 
+
                     </td>
                 </tr>
             </tbody>
