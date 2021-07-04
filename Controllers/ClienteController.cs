@@ -34,7 +34,7 @@ namespace CarritoPrueba1.Controllers
         }
 
         [HttpPost]
-        public IActionResult Registrar(Cliente objCliente)
+        public IActionResult Registro(Cliente objCliente)
         {
             //si está todo VALIDADO, recién aparece esta wea
             if (ModelState.IsValid)
@@ -43,10 +43,12 @@ namespace CarritoPrueba1.Controllers
                 _context.Add(objCliente);
                 _context.SaveChanges();
 
-               //objCliente.confirmacion = "Gracias, estamos en contacto";
+                //objCliente.confirmacion = "Gracias, estamos en contacto";
+
+                return RedirectToAction("Index", "Home");
             }
 
-            return RedirectToAction("Index", "Home");
+            return View();
             //return View("Index2",objCliente);
 
         }

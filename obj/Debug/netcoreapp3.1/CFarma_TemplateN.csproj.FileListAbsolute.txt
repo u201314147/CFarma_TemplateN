@@ -120,7 +120,6 @@ C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Home\Logueo.cshtml.g.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Home\Registro.cshtml.g.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Nutricion\Hierro.cshtml.g.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Nutricion\Magnesio.cshtml.g.cs
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Nutricion\Zinc.cshtml.g.cs
@@ -208,3 +207,4 @@ C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\Microsoft.Web.Infrastructure.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\bin\Debug\netcoreapp3.1\WebGrease.dll
 C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Nutricion\Carrito.cshtml.g.cs
+C:\Users\X10538\Downloads\Material-ProyectoCFarma\Material-ProyectoCFarma\f\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Registro.cshtml.g.cs

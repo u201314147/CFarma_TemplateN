@@ -32,7 +32,9 @@ namespace CFarma_TemplateN.Models
         [Display(Name = "Apellidos")]
         public string Apellido { get; set; }
 
-        [DataType(DataType.PhoneNumber)]
+       
+        [Required(ErrorMessage = "Debe escribir su numero de dni")]
+        [DataType(DataType.PhoneNumber, ErrorMessage = "Numero de dni incorrecto")]
         [Column("nrodoc")]
         [Display(Name = "Número de identidad")]
         public int Nrodoc { get; set; }
@@ -41,15 +43,18 @@ namespace CFarma_TemplateN.Models
         [Display(Name = "Sexo")]
         public string Sexo { get; set; }
 
+        [Required(ErrorMessage = "Debe escribir un correo electronico valido")]
         [Column("correo")]
         [Display(Name = "Correo electrónico")]
         public string Correo { get; set; }
 
-        [DataType(DataType.PhoneNumber)]
+        [Required(ErrorMessage = "Debe escribir un número de teléfono valido")]
+        [DataType(DataType.PhoneNumber, ErrorMessage = "Numero de telefono incorrecto")]
         [Column("movil")]
         [Display(Name = "Teléfono móvil")]
         public int Movil { get; set; }
 
+        [Required(ErrorMessage = "Debe escribir una contraseña")]
         [Display(Name = "Contraseña")]
         [Column("pswd")]
         public string Pswd { get; set; }
